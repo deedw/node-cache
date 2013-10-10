@@ -28,7 +28,6 @@ exports.put = function(key, value, time, timeoutCallback) {
 }
 
 exports.del = function(key) {
-  var self = this;
   var record = cache[key];
     
   if (!record) return;
